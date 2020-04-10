@@ -1,11 +1,7 @@
-import React from 'react';
+import { RouterHelper } from './helpers';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
-  );
+  return RouterHelper.RenderRoutes();
 }
 
 export default App;
