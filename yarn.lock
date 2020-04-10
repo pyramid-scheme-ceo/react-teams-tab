@@ -1153,6 +1153,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@microsoft/teams-js@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/teams-js/-/teams-js-1.6.0.tgz#3f3052f79803be57b68dfb711cb551f30c7ed62a"
+  integrity sha512-6OGjEgyC5C5iyJtTT1FKVHv69ROs/NJUI6McuBAtnsYU79W+ixpMnyRE6VMyMUgA0aPmfSsqxS9GFE/TbGTGmQ==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
