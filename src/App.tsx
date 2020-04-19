@@ -3,16 +3,12 @@ import { RouterHelper, TeamsThemeHelper } from './helpers';
 import { Provider, ThemePrepared } from '@fluentui/react-northstar';
 import * as msTeams from '@microsoft/teams-js';
 
-export default class App extends React.Component<IAppProps, IAppState> {
-  private teamsThemeHelper: TeamsThemeHelper;
-  
+export default class App extends React.Component<IAppProps, IAppState> {  
   constructor(props: IAppProps) {
     super(props);
 
-    this.teamsThemeHelper = new TeamsThemeHelper();
-
     this.state = {
-      theme: this.teamsThemeHelper.getTheme('default')
+      theme: TeamsThemeHelper.getTheme('default')
     };
 
     msTeams.initialize();
@@ -30,7 +26,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
 
   private updateTheme(themeString: string | undefined): void {
     this.setState({
-      theme: this.teamsThemeHelper.getTheme(themeString)
+      theme: TeamsThemeHelper.getTheme(themeString)
     });
   }
 }

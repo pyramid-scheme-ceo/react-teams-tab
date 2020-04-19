@@ -2,7 +2,7 @@ import { ThemePrepared, themes } from '@fluentui/react-northstar';
 import { TeamsThemes } from '../constants';
 
 export default class TeamsThemeHelper {
-    public getTheme(themeStr: string | undefined): ThemePrepared {
+    public static getTheme(themeStr: string | undefined): ThemePrepared {
         let theme: ThemePrepared;
         themeStr = themeStr || '';
 
