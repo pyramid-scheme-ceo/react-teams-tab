@@ -1,5 +1,5 @@
 import React from 'react';
-import { RouterHelper, TeamsThemeHelper } from './helpers';
+import { RouterHelper, TeamsThemeHelper, AuthHelper } from './helpers';
 import { Provider, ThemePrepared } from '@fluentui/react-northstar';
 import * as msTeams from '@microsoft/teams-js';
 
@@ -8,7 +8,8 @@ export default class App extends React.Component<IAppProps, IAppState> {
     super(props);
 
     this.state = {
-      theme: TeamsThemeHelper.getTheme('default')
+      theme: TeamsThemeHelper.getTheme('default'),
+      loggedIn: AuthHelper.IsUserLoggedIn()
     };
 
     msTeams.initialize();
@@ -19,7 +20,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
   render() {
     return (
       <Provider theme={this.state.theme}>
-        <RouterHelper.RenderRoutes />
+        { this.state.loggedIn ? <RouterHelper.AuthenticatedRoutes /> : <RouterHelper.UnauthenticatedRoutes />}
       </Provider>
     )
   }
@@ -35,4 +36,5 @@ interface IAppProps { }
 
 interface IAppState {
   theme: ThemePrepared;
+  loggedIn: boolean;
 }

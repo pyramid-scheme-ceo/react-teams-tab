@@ -1454,6 +1454,11 @@
   resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-7.2.1.tgz#2ad4e844175a3738cb9e7064be5ea070b8863a1c"
   integrity sha512-oZ0Ib5I4Z2pUEcoo95cT1cr6slco9WY7yiPpG+RGNkj8YcYgJnM7pXmYmorNOReh8MIGcKSqXyeGjxnr8YiZbA==
 
+"@types/adal-angular@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/adal-angular/-/adal-angular-1.0.1.tgz#424822e2e17a6c185f33ef80b1208f035e52a735"
+  integrity sha512-2sRGxJYrluhvIz8ae98i5k5woe9Fics4dMFHTcNfY2xAkj5QGZor+sfZzlgM58Fpw7Kklau9Gn6OhgJP25dKug==
+
 "@types/babel__core@^7.1.0":
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.6.tgz#16ff42a5ae203c9af1c6e190ed1f30f83207b610"
@@ -1926,6 +1931,11 @@ acorn@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.1.1.tgz#e35668de0b402f359de515c5482a1ab9f89a69bf"
   integrity sha512-add7dgA5ppRPxCFJoAGfMDi7PIBXq1RtGo7BhbLaxwrXPOmw8gq48Y9ozT01hUKy9byMjlR20EJhu5zlkErEkg==
+
+adal-angular@^1.0.17:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/adal-angular/-/adal-angular-1.0.17.tgz#6e936e0e41f91d3b2a88e7ffca9c2f6f6f562cc4"
+  integrity sha1-bpNuDkH5HTsqiOf/ypwvb29WLMQ=
 
 address@1.1.2, address@^1.0.1:
   version "1.1.2"

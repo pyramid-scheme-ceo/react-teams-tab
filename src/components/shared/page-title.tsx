@@ -1,11 +1,11 @@
 import React from 'react';
-import { Flex, FlexItem, Text, Icon } from '@fluentui/react-northstar';
+import { Flex, FlexItem, Text } from '@fluentui/react-northstar';
 
 export default function PageTitle(props: PageTitleProps) {
     return (
         <Flex gap="gap.medium" styles={{ paddingLeft: '5px' }}>
             {props.icon && <FlexItem align="center">
-                <Icon name={props.icon} />
+                {props.icon}
             </FlexItem>}
             <FlexItem>
                 <Text content={props.title} size="large" weight="bold" />
@@ -16,5 +16,5 @@ export default function PageTitle(props: PageTitleProps) {
 
 interface PageTitleProps {
     title: string;
-    icon?: string;
+    icon?: JSX.Element;
 }
