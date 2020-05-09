@@ -5,7 +5,7 @@ export const TeamsThemes = {
 };
 
 export const Auth = {
-    appId: 'b814768d-16ba-44a6-b456-6031e07906d3',
+    appId: '', // INSERT YOUR APP ID HERE
     cacheLocation: 'localStorage',
     signInStartPage: 'auth/signinstart',
     signInEndPage: 'auth/signinend',
