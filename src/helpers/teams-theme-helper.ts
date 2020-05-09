@@ -3,21 +3,16 @@ import { TeamsThemes } from '../constants';
 
 export default class TeamsThemeHelper {
     public static getTheme(themeStr: string | undefined): ThemePrepared {
-        let theme: ThemePrepared;
         themeStr = themeStr || '';
 
         switch (themeStr) {
             case TeamsThemes.dark:
-                theme = themes.teamsDark;
-                break;
+                return themes.teamsDark;
             case TeamsThemes.contrast:
-                theme = themes.teamsHighContrast;
-                break;
+                return themes.teamsHighContrast;
             case TeamsThemes.default:
             default:
-                theme = themes.teams;
+                return themes.teams;
         }
-
-        return theme;
     }
 }
