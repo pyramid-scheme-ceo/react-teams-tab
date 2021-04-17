@@ -1,5 +1,5 @@
 export const TeamsThemes = {
-    contrast: "constrast",
+    contrast: "contrast",
     dark: "dark",
     default: "default"
 };
